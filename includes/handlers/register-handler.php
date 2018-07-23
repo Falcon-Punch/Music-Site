@@ -31,6 +31,9 @@ if(isset($_POST['registerButton']))
 	$email2 = formatFormString($_POST['email2']);
 	$password = formatFormPassword($_POST['password']);
 	$password2 = formatFormPassword($_POST['password2']);
+
+	$account->register($userName, $firstName, $lastName, $email,
+		$email2, $password, $password2);
 }
 
 ?>

@@ -1,3 +1,12 @@
+<?php
+	include("includes/classes/Account.php");
+	$account = new Account();
+	$account->register();
+	
+	include("includes/handlers/register-handler.php");
+	include("includes/handlers/login-handler.php");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,16 +28,16 @@
 		<form id="registerForm" action="register.php" method="POST">
 			<h2>Create your free account</h2>
 			<p>
-				<label for="username">User Name</label>
-				<input id="username" name="username" type="text" placeholder="e.g. JohnSmith" required></p>
+				<label for="userName">User Name</label>
+				<input id="userName" name="userName" type="text" placeholder="e.g. JohnSmith" required></p>
 
 			<p>
-				<label for="firstname">First Name</label>
-				<input id="firstname" name="firstname" type="text" placeholder="e.g. John" required></p>
+				<label for="firstName">First Name</label>
+				<input id="firstName" name="firstName" type="text" placeholder="e.g. John" required></p>
 
 			<p>
-				<label for="lastname">Last Name</label>
-				<input id="lastname" name="lastname" type="text" placeholder="e.g. Smith" required></p>
+				<label for="lastName">Last Name</label>
+				<input id="lastName" name="lastName" type="text" placeholder="e.g. Smith" required></p>
 
 			<p>
 				<label for="email">Email</label>

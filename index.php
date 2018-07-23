@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Music Streming Site</title>
 </head>
 <body>
-hello!
+	hello!
 </body>
 </html>

@@ -16,6 +16,25 @@
 			$this->validateLastName($lastName);
 			$this->validateEmails($email, $email2);
 			$this->validatePasswords($password, $password2);
+
+			if(empty($this->errorArray))
+			{
+				// Insert into database
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+
+		public function getError($error)
+		{
+			if(!in_array($error, $this->errorArray))
+			{
+				$error = "";
+			}
+			return "<span class='errorMessage'>$error</span>";
 		}
 
 		// Validate Functions

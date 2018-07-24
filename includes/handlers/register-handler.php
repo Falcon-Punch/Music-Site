@@ -32,8 +32,13 @@ if(isset($_POST['registerButton']))
 	$password = formatFormPassword($_POST['password']);
 	$password2 = formatFormPassword($_POST['password2']);
 
-	$account->register($userName, $firstName, $lastName, $email,
+	$wasSuccessful = $account->register($userName, $firstName, $lastName, $email,
 		$email2, $password, $password2);
+
+	if($wasSuccessful)
+	{
+		header("Location: index.php");
+	}
 }
 
 ?>

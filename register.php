@@ -1,7 +1,7 @@
 <?php
 	include("includes/classes/Account.php");
 	$account = new Account();
-		
+
 	include("includes/handlers/register-handler.php");
 	include("includes/handlers/login-handler.php");
 ?>
@@ -27,6 +27,8 @@
 		<form id="registerForm" action="register.php" method="POST">
 			<h2>Create your free account</h2>
 			<p>
+				<?php echo $account->getError("Your username must be 
+					between 4 and 20 characters in length."); ?>
 				<label for="userName">User Name</label>
 				<input id="userName" name="userName" type="text" placeholder="e.g. JohnSmith" required></p>
 

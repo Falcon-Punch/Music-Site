@@ -8,7 +8,7 @@ html, body
 #background
 {
 	background-color: #000000;
-	background-image: url(../images/registerBG2.jpg);
+	background-image: url(../images/registerBG3.jpg);
 	background-position: center;
 	background-size: cover;
 	display: table;
@@ -56,4 +56,61 @@ html, body
 	height: 27px;
 	line-height: 27px;
 	width: 100%;
+	display: block;
+}
+
+#inputContainer label
+{
+	color: #A0A0A0;
+	font-size: 13px;
+	margin-top: 15px;
+}
+
+#inputContainer button
+{
+	background-color: transparent;
+	border: 2px solid #FFFFFF;
+	border-radius: 200px;
+	color: #D9D9D9;
+	display: block;
+	font-size: 14px;
+	letter-spacing: 1px;
+	margin: 20px auto;
+	height: 41px;
+	width: 100%;
+}
+
+#inputContainer button:hover
+{
+	cursor: pointer;
+	background-color: #50005B;
+    color: #FFFFFF;
+	transition-duration: 1.4s;
+}
+
+::-webkit-input-placeholder 
+{ /* WebKit, Blink, Edge */
+    color: #FFFFFF;
+}
+:-moz-placeholder 
+{ /* Mozilla Firefox 4 to 18 */
+   color: #FFFFFF;
+   opacity: 1;
+}
+::-moz-placeholder 
+{ /* Mozilla Firefox 19+ */
+   color: #FFFFFF;
+   opacity: 1;
+}
+:-ms-input-placeholder 
+{ /* Internet Explorer 10-11 */
+   color: #FFFFFF;
+}
+::-ms-input-placeholder 
+{ /* Microsoft Edge */
+   color: #FFFFFF;
+}
+::placeholder 
+{ /* Most modern browsers support this now. */
+   color: #FFFFFF;
 }

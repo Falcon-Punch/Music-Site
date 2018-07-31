@@ -20,7 +20,11 @@
 <html>
 <head>
 	<title>Welcome to Musix</title>
+
 	<link rel="stylesheet" type="text/css" href="assets/css/register.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="assets/js/register.js"></script>
 </head>
 <body>
 	<div id="background">
@@ -35,7 +39,11 @@
 					<p>
 						<label for="loginPassword">Password</label>
 						<input id="loginPassword" name="loginPassword" type="password" placeholder="Your Password" required></p>
+
 					<button type="submit" name="loginButton">Log In</button>
+					<div class="hasAccountText">
+						<span id="hideLogin">Don't have an account yet? Sign up here.</span>
+					</div>
 				</form>
 
 				<form id="registerForm" action="register.php" method="POST">
@@ -77,7 +85,11 @@
 					<p>
 						<label for="password2">Confirm Password</label>
 						<input id="password2" name="password2" type="password" placeholder="Your Password" required></p>
+
 					<button type="submit" name="registerButton">Sign Up</button>
+					<div class="hasAccountText">
+						<span id="hideRegister">Already have an account? Log in here.</span>
+					</div>
 				</form>
 			</div>
 		</div>

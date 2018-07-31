@@ -10,10 +10,10 @@
 			$this->errorArray = array();
 		}
 
-		public function register($userName, $firstName, $lastName,
+		public function register($username, $firstName, $lastName,
 			$email, $email2, $password, $password2)
 		{
-			$this->validateUserName($userName);
+			$this->validateUserName($username);
 			$this->validateFirstName($firstName);
 			$this->validateLastName($lastName);
 			$this->validateEmails($email, $email2);
@@ -22,8 +22,8 @@
 			if(empty($this->errorArray))
 			{
 				// Insert into database
-				return insertUserDetails($username, $firstName, $lastName, 
-			$email, $password);
+				return $this->insertUserDetails($username, $firstName, $lastName, 
+					$email, $password);
 			}
 			else
 			{
@@ -53,15 +53,21 @@
 		}
 
 		// Validate Functions
-		private function validateUserName($userName)
+		private function validateUserName($username)
 		{
-			if(strlen($userName) > 20 || strlen($userName) < 4)
+			if(strlen($username) > 20 || strlen($username) < 4)
 			{
 				array_push($this->errorArray, Constants::$usernameSize);
 				return;
 			}
 
-			// TODO: Check if username exists.
+			$checkUsernameQuery = mysqli_query($this->con, "SELECT username FROM users WHERE username='$username'");
+
+			if(mysqli_num_rows($checkUsernameQuery) != 0)
+			{
+				array_push($this->errorArray, Constants::$usernameTaken);
+				return;
+			}
 		}
 
 		private function validateFirstName($firstName)
@@ -96,7 +102,13 @@
 				return;
 			}
 
-			// TODO: Check that the user name hasn't already been used.
+			$checkEmailQuery = mysqli_query($this->con, "SELECT email FROM users WHERE email='$email'");
+
+			if(mysqli_num_rows($checkEmailQuery) != 0)
+			{
+				array_push($this->errorArray, Constants::$emailTaken);
+				return;
+			}
 		}
 
 		private function validatePasswords($password, $password2)

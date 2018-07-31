@@ -24,7 +24,7 @@ function formatFormPassword($inputText)
 if(isset($_POST['registerButton']))
 {
 	// Register button pressed
-	$userName = formatFormUserName($_POST['userName']);
+	$username = formatFormUserName($_POST['username']);
 	$firstName = formatFormString($_POST['firstName']);
 	$lastName = formatFormString($_POST['lastName']);
 	$email = formatFormString($_POST['email']);
@@ -32,7 +32,7 @@ if(isset($_POST['registerButton']))
 	$password = formatFormPassword($_POST['password']);
 	$password2 = formatFormPassword($_POST['password2']);
 
-	$wasSuccessful = $account->register($userName, $firstName, $lastName, $email,
+	$wasSuccessful = $account->register($username, $firstName, $lastName, $email,
 		$email2, $password, $password2);
 
 	if($wasSuccessful)

@@ -6,6 +6,9 @@ Sources and Inspirations:
 	https://icons8.com/
 	https://www.spotify.com/us/
 	https://www.udemy.com/
+	https://www.nasa.gov/
+	http://hubblesite.org/images/gallery
+	2001: A Space Odyssey (HAL 9000)
 -->
 <?php
 	include("includes/config.php");

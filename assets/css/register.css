@@ -113,6 +113,36 @@ html, body
 	display: none;
 }
 
+#loginText
+{
+	padding: 45px;
+	display: table-cell;
+}
+
+#loginText h1
+{
+	color: #07d159;
+	font-size: 60px;
+	font-weight: bold;
+}
+
+#loginText h2
+{
+	margin: 35px 0;
+}
+
+#loginText ul
+{
+	padding: 0;
+}
+
+#loginText li
+{
+	font-size: 20px;
+    padding: 10px;
+    list-style-type: none;
+}
+
 ::-webkit-input-placeholder 
 { /* WebKit, Blink, Edge */
     color: #A0A0A0;

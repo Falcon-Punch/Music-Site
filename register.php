@@ -121,6 +121,17 @@
 					</div>
 				</form>
 			</div>
+
+			<div id="loginText">
+				<h1>Stream great music</h1>
+				<h2>Listen to loads of songs for free</h2>
+				<ul>
+					<li>Access to all genres and generations of music</li>
+					<li>Discover new music you'll fall in love with</li>
+					<li>Create your own playlists</li>
+				</ul>
+			</div>
+			
 		</div>
 	</div>
 </body>

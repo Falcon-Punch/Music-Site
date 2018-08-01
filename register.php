@@ -1,3 +1,12 @@
+<!--
+Project: Spotify Music Site clone
+Date: 07/20/2018
+Author: Joseph Schell
+Sources and Inspirations:
+	https://icons8.com/
+	https://www.spotify.com/us/
+	https://www.udemy.com/
+-->
 <?php
 	include("includes/config.php");
 	include("includes/classes/Account.php");
@@ -20,7 +29,7 @@
 <html>
 <head>
 	<title>Welcome to Musix</title>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="assets/css/register.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -121,17 +130,23 @@
 					</div>
 				</form>
 			</div>
-
-			<div id="loginText">
-				<h1><span>S</span><span>t</span><span>r</span><span>e</span><span>a</span><span>m</span><span>&nbsp;</span><span>g</span><span>r</span><span>e</span><span>a</span><span>t</span><span>&nbsp;</span><br><span>m</span><span>u</span><span>s</span><span>i</span><span>c</span></h1>
-				<h2>Listen to loads of songs for free!</h2>
-				<ul>
-					<li>Access to all genres and generations of music</li>
-					<li>Discover new music you'll fall in love with</li>
-					<li>Create your own playlists</li>
-				</ul>
-			</div>
-
+			  <div id="outerContainer">
+			    <div id="container">
+			    	<div id="loginText">
+						<h1>Stream great music</h1>
+						<h2>Listen to loads of songs for free!</h2>
+						<ul>
+							<li>Access to all genres and generations of music</li>
+							<li>Discover new music you'll fall in love with</li>
+							<li>Create your own playlists</li>
+						</ul>
+					</div>
+			      <div class="circle" style="animation-delay: 3s"></div>
+			      <div class="circle" style="animation-delay: -2s"></div>
+				  <div class="circle" style="animation-delay: -1s"></div>
+				  <div class="circle" style="animation-delay: 0s"></div>
+			      </div>
+			  </div>
 		</div>
 	</div>
 </body>

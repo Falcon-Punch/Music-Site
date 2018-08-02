@@ -16,9 +16,15 @@ else
 
 <html>
 <head>
-	<title>Music Streming Site</title>
+	<title>Music Streaming Site</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	hello!
+	Under Construction!!
+	<div id="nowPlayingBarContainer">
+		<div id="nowPlayingBar">
+		</div>
+	</div>
+
 </body>
 </html>

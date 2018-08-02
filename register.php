@@ -76,13 +76,13 @@ Sources and Inspirations:
 					<p>
 						<?php echo $account->getError(Constants::$loginFailed); ?>
 						<label for="loginUsername">User Name</label>
-						<input id="loginUsername" name="loginUsername" type="text" placeholder="e.g. JohnSmith" required></p>
+						<input id="loginUsername" name="loginUsername" type="text" placeholder="e.g. JohnSmith" value="<?php getInputValue('loginUsername') ?>"required></p>
 					<p>
 						<label for="loginPassword">Password</label>
 						<input id="loginPassword" name="loginPassword" type="password" placeholder="Your Password" required></p>
 
 					<button type="submit" name="loginButton">Log In</button>
-					<div class="hasAccountText">
+					<div id="hasAccountText">
 						<span id="hideLogin">Don't have an account yet? Sign up here.</span>
 					</div>
 				</form>
@@ -128,8 +128,9 @@ Sources and Inspirations:
 						<input id="password2" name="password2" type="password" placeholder="Your Password" required></p>
 
 					<button type="submit" name="registerButton">Sign Up</button>
-					<div class="hasAccountText">
-						<span id="hideRegister">Already have an account? Log in here.</span>
+					<div id="hasAccountText">
+						<span id="hideRegister">
+						Already have an account? Log in here.</span>
 					</div>
 				</form>
 			</div>

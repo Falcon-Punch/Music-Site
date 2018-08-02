@@ -23,6 +23,7 @@ html, body
 	font-weight: normal;
 	line-height: 1em;
 	box-sizing: border-box;
+	color: #FFFFFF;
 }
 
 #loginContainer
@@ -65,6 +66,7 @@ html, body
 	color: #FFFFFF;
 	font-size: 13px;
 	margin-top: 15px;
+	display: block;
 }
 
 #inputContainer button
@@ -89,20 +91,29 @@ html, body
 	transition-duration: 1.4s;
 }
 
-.hasAccountText:hover
+#inputContainer .errorMessage
+{
+	color: #E100FF;
+	font-size: 12px;
+	display: block;
+}
+
+#hasAccountText span:hover
 {
 	cursor: pointer;
 	color: #E100FF;
 	transition-duration: 0.8s;
 }
 
-.hasAccountText span
+#hasAccountText span
 {
 	font-weight: bold;
 	font-size: 14px;
+	color: #B6B6B6;
+	text
 }
 
-.hasAccountText
+#hasAccountText
 {
 	color: #B6B6B6;
 	text-align: center;

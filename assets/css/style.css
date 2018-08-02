@@ -193,7 +193,48 @@ html, body
 	-ms-flex-direction: column;
 }
 
+.logo
+{
+	margin-bottom: 15px;
+}
+
 .logo img
 {
 	width: 32px;
+}
+
+.navBar .group
+{
+	border-top: 1px solid #A0A0A0;
+	padding: 10px 0;
+}
+
+.navItem
+{
+	padding: 10px 0;
+	font-size: 14px;
+	font-weight: 700;
+	display: block;
+	letter-spacing: 1px;
+	position: relative;
+}
+
+.navItemLink
+{
+	color: #A0A0A0;
+	text-decoration: none;
+}
+
+.navItemLink:hover
+{
+	color: #FFFFFF;
+	/* test other colors */
+}
+
+.navItemLink .icon
+{
+	position: absolute;
+	right: 6px;
+	top: 6px;
+	width: 25px;
 }

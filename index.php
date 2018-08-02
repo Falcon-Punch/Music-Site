@@ -24,6 +24,11 @@ else
 	<div id="nowPlayingBarContainer">
 		<div id="nowPlayingBar">
 			<div id="nowPlayingLeft">
+				<div class="content">
+					<span class="albumLink">
+						<img src="assets/images/icons/alien.png" class="albumArtwork">
+					</span>
+				</div>
 			</div>
 			<div id="nowPlayingCenter">
 				<div class="content playerControls">
@@ -47,6 +52,16 @@ else
 							<img src="assets/images/icons/UV/repeat.png" alt="Repeat">
 						</button>
 					</div>
+					<div class="playbackBar">
+						<span class="progressTime current">0.00</span>
+						<div class="progressBar">
+							<div class="progressBarBG">
+								<div class="progress"></div>
+							</div>
+						</div>
+						<span class="progressTime remaining">0.00</span>
+					</div>
+
 				</div>
 			</div>
 			<div id="nowPlayingRight">

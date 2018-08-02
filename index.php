@@ -28,6 +28,14 @@ else
 					<span class="albumLink">
 						<img src="assets/images/icons/alien.png" class="albumArtwork">
 					</span>
+					<div class="trackInfo">
+						<span class="trackName">
+							<span>Track Name</span>
+						</span>
+						<span class="artistName">
+							<span>Artist Name</span>
+						</span>
+					</div>
 				</div>
 			</div>
 			<div id="nowPlayingCenter">
@@ -65,6 +73,16 @@ else
 				</div>
 			</div>
 			<div id="nowPlayingRight">
+				<div class="volumeBar">
+					<button class="controlButton volume" title="Volume button">
+						<img src="assets/images/icons/UV/volume.png" alt="Volume">
+					</button>
+					<div class="progressBar">
+						<div class="progressBarBG">
+							<div class="progress"></div>
+						</div>
+					</div>
+				</div>
 			</div>
 
 		</div>

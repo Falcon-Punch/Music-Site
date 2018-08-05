@@ -38,8 +38,21 @@ $artist = $album->getArtist();
 
 			echo "<li class='tracklistRow'>
 					<div class='trackCount'>
-						<img class='play' src='assets/images/icons/play-white.png'>
+						<img class='play' src='assets/images/icons/UV/song-play.png'>
 						<span class='trackNumber'>$i</span>
+					</div>
+
+					<div class='trackInfo'>
+						<span class='trackName'>" . $albumSong->getTitle() . "</span>
+						<span class='artistName'>" . $albumArtist->getName() . "</span>
+					</div>
+
+					<div class='trackOptions'>
+						<img class='optionsButton' src='assets/images/icons/ellip.png'>
+					</div>
+
+					<div class='trackDuration'>
+						<span class='duration'>" . $albumSong->getDuration() . "</span>
 					</div>
 				</li>";
 

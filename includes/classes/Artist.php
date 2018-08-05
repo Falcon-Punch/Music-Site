@@ -1,9 +1,8 @@
 <?php
-	class Account
+	class Artist
 	{
 		private $con;
 		private $id;
-
 
 		public function __construct($con, $id)
 		{

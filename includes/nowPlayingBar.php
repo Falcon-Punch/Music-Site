@@ -23,7 +23,28 @@ $(document).ready(function()
 
 function setTrack(trackId, newPlaylist, play) 
 {
-	audioElement.setTrack("assets/music/bensound-clearday.mp3");
+	$.post("includes/handlers/ajax/getSongJson.php", { songId: trackId }, function(data) 
+	{
+		var track = JSON.parse(data);
+
+		$(".trackName span").text(track.title);
+
+		$.post("includes/handlers/ajax/getArtistJson.php", { artistId: track.artist }, function(data) 
+		{
+			var artist = JSON.parse(data);
+
+			$(".artistName span").text(artist.name);
+		});
+
+		$.post("includes/handlers/ajax/getAlbumJson.php", { albumId: track.album }, function(data) 
+		{
+			var album = JSON.parse(data);
+			$(".albumLink img").attr("src", album.artworkPath);
+		});
+		
+		audioElement.setTrack(track.path);
+		audioElement.play();
+	});
 
 	if(play == true)
 	{
@@ -52,14 +73,14 @@ function pauseSong()
 		<div id="nowPlayingLeft">
 			<div class="content">
 				<span class="albumLink">
-					<img src="assets/images/icons/alien.png" class="albumArtwork">
+					<img src="" class="albumArtwork">
 				</span>
 				<div class="trackInfo">
 					<span class="trackName">
-						<span>Track Name</span>
+						<span></span>
 					</span>
 					<span class="artistName">
-						<span>Artist Name</span>
+						<span></span>
 					</span>
 				</div>
 			</div>

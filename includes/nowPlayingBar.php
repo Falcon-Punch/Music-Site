@@ -85,6 +85,19 @@ function timeFromOffset(mouse, progressBar)
 	audioElement.setTime(seconds);
 }
 
+function prevSong()
+{
+	if(audioElement.audio.currentTime >= 3 || currentIndex == 0)
+	{
+		audioElement.setTime(0);
+	}
+	else
+	{
+		currentIndex--;
+		setTrack(currentPlaylist[currentIndex], currentPlaylist, true);
+	}
+}
+
 function nextSong()
 {
 	if(repeat == true)
@@ -112,6 +125,13 @@ function setRepeat()
 	repeat = !repeat;
 	var imageName = repeat ? "repeat-active.png" : "repeat.png";
 	$(".controlButton.repeat img").attr("src", "assets/images/icons/UV/" + imageName);
+}
+
+function setMute()
+{
+	audioElement.audio.muted = !audioElement.audio.muted;
+	var imageName = audioElement.audio.muted ? "mute.png" : "volume.png";
+	$(".controlButton.volume img").attr("src", "assets/images/icons/UV/" + imageName);
 }
 
 function setTrack(trackId, newPlaylist, play) 
@@ -192,7 +212,7 @@ function pauseSong()
 					<button class="controlButton shuffle" title="Shuffle button">
 						<img src="assets/images/icons/UV/shuffle.png" alt="Shuffle">
 					</button>
-					<button class="controlButton previous" title="Previous button">
+					<button class="controlButton previous" title="Previous button" onclick="prevSong()">
 						<img src="assets/images/icons/UV/previous.png" alt="Previous">
 					</button>
 					<button class="controlButton play" title="Play button" onclick="playSong()">
@@ -221,7 +241,7 @@ function pauseSong()
 		</div>
 		<div id="nowPlayingRight">
 			<div class="volumeBar">
-				<button class="controlButton volume" title="Volume button">
+				<button class="controlButton volume" title="Volume button" onclick="setMute()">
 					<img src="assets/images/icons/UV/volume.png" alt="Volume">
 				</button>
 				<div class="progressBar">

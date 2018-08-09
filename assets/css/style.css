@@ -235,8 +235,9 @@ body
 
 .navItemLink:hover
 {
-	color: #FFFFFF;
-	/* test other colors */
+	color: #18FF00;
+	cursor: pointer;
+	/* NAV HOVER test other colors */
 }
 
 .navItemLink .icon

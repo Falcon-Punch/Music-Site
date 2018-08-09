@@ -60,5 +60,10 @@
 		{
 			return $this->genre;
 		}
+
+		public function getId() 
+		{
+			return $this->id;
+		}
 	}
 ?>

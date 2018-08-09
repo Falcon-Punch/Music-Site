@@ -111,3 +111,8 @@ function Audio()
 		this.audio.currentTime = seconds;
 	}
 }
+
+function playFirstSong()
+{
+	setTrack(tempPlaylist[0], tempPlaylist, true);
+}

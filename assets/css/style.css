@@ -515,7 +515,8 @@ input:focus
     color: #FFFFFF;
 }
 
-.noResults {
+.noResults 
+{
     margin: 15px;
     display: block;
 }

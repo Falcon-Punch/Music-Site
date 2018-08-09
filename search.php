@@ -26,8 +26,6 @@ $(function()
 {
 	$(".searchInput").keyup(function()
 	{
-		var timer;
-
 		clearTimeout(timer);
 
 		timer = setTimeout(function()

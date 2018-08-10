@@ -536,10 +536,16 @@ input:focus
 {
     border: 3px solid #282828;
     padding: 10px;
+    max-width: 170px;
+    max-height: 170px;
 }
 
-
-
+.playlistImage:hover
+{
+	content: url('https://user-images.githubusercontent.com/24645219/43950109-4d5a849a-9c44-11e8-9f21-bf4c653e79a8.jpg');
+	max-width: 170px;
+    max-height: 170px;
+}
 
 
 

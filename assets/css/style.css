@@ -521,7 +521,22 @@ input:focus
     display: block;
 }
 
+.buttonItems .button 
+{
+    display: block;
+    margin: 0 auto 20px auto;
+}
 
+.playlistsContainer 
+{
+    padding: 10px 0;
+}
+
+.playlistImage 
+{
+    border: 3px solid #282828;
+    padding: 10px;
+}
 
 
 

@@ -619,7 +619,7 @@ input:focus
 {
     height: 50px;
     width: 100%;
-    background: #1f1f1f;
+    background: #1F1F1F;
     border: none;
     font-size: 18px;
     font-weight: 300;
@@ -628,7 +628,7 @@ input:focus
 
 .userDetails .container .message
 {
-    color: #2ebd59;
+    color: #18FF00;
     font-weight: 300;
 }
 

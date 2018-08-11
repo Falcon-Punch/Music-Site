@@ -104,6 +104,23 @@ function deletePlaylist(playlistId)
 	}
 }
 
+function removeFromPlaylist(button, playlistId)
+{
+	var songId = $(button).prevAll(".songId").val();
+
+	$.post("includes/handlers/ajax/removeFromPlaylist.php", { playlistId: playlistId, songId: songId })
+	.done(function(error)
+	{
+		if(error != "")
+		{
+			alert(error);
+			return;
+		}
+
+		openPage("playlist.php?id=" + playlistId);
+	});
+}
+
 function hideOptionsMenu()
 {
 	var menu = $(".optionsMenu");

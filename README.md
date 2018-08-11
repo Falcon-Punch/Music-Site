@@ -1,6 +1,6 @@
 # Music-Site
 
-Project to clone a music streaming style website similar to Spotify (In Progress).<br/>
+Project to clone a music streaming style website similar to Spotify.<br/>
 This project has helped me get familiar with a variety of languages and technologies including:<br/>
 * PHP
 * Advanced CSS
@@ -10,7 +10,6 @@ This project has helped me get familiar with a variety of languages and technolo
 * Git Command Line 
 * Sublime Text Editor
 * Xampp
-* Heroku
 
 ## Site Screenshots:
 
@@ -20,10 +19,38 @@ This project has helped me get familiar with a variety of languages and technolo
 
 **Home Page:**
 
-![screen2](https://user-images.githubusercontent.com/24645219/43889645-9edd35fe-9b79-11e8-8105-9cf079e4e062.jpg)
+![home](https://user-images.githubusercontent.com/24645219/43997069-f392f0b6-9d86-11e8-85f9-e2b54c4d6c3c.jpg)
 
-**Album Page:**
+**Playlists Page:**
 
-![screen1](https://user-images.githubusercontent.com/24645219/43889644-9ec6675c-9b79-11e8-925e-03f42771afbd.jpg)
+![playlists](https://user-images.githubusercontent.com/24645219/43997070-f3a34b28-9d86-11e8-98ab-2bcf20f7d75c.jpg)
+
+**Search Page:**
+
+![search](https://user-images.githubusercontent.com/24645219/43997071-f3b39992-9d86-11e8-8ce3-e1221d287a83.jpg)
+
+**User Details Page:**
+
+![details](https://user-images.githubusercontent.com/24645219/43997068-f381f5b8-9d86-11e8-9d2e-5c3b78e6af3a.jpg)
+
+
+## Sources:
+
+~~~
+<!--
+Project: Music Streaming Site (Spotify Clone)
+Date: 07/20/2018
+Author: Joseph Schell
+Sources and Inspirations:
+	https://icons8.com/ (Source of almost every icon on the site)
+	https://www.spotify.com/us/
+	https://www.bensound.com/ (Free music used on site)
+	https://www.udemy.com/
+	https://www.apachefriends.org/index.html (Xampp)
+	http://hubblesite.org/images/gallery (Login page background)
+	2001: A Space Odyssey (HAL 9000) (Easter egg)
+-->
+~~~
+
 
 

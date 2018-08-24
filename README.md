@@ -11,6 +11,9 @@ This project has helped me get familiar with a variety of languages and technolo
 * Sublime Text Editor
 * Xampp
 
+## Link to site:
+http://josephschell.webhostingforstudents.com/musicSite/register.php
+
 ## Site Screenshots:
 
 **Login / Registration Page:**

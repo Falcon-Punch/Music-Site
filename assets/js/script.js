@@ -9,6 +9,11 @@ var shuffle = false;
 var userLoggedIn;
 var timer;
 
+$.preload( 'images/playlistHover.jpg',
+  'images/playlist.jpg',
+  'images/artwork/default.png'
+);
+
 $(document).click(function(click)
 {
 	var target = $(click.target);

@@ -30,6 +30,7 @@ if(isset($_POST['registerButton']))
 	$email = formatFormString($_POST['email']);
 	$email2 = formatFormString($_POST['email2']);
 	$password = formatFormPassword($_POST['password']);
+	echo "Password: $password";
 	$password2 = formatFormPassword($_POST['password2']);
 
 	$wasSuccessful = $account->register($username, $firstName, $lastName, $email,
